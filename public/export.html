@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exportar Presenças</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exportar Presenças</h1>
+        <nav>
+            <a href="index.html">Voltar</a>
+        </nav>
+
+        <div id="controle-exportacao">
+            <label for="buscar-funcionario">Selecionar Funcionário:</label>
+            <select id="buscar-funcionario">
+                <!-- Funcionários serão carregados aqui -->
+            </select>
+
+            <h3>Exportar para Excel</h3>
+            <form id="form-exportar">
+                <label for="inicio">Data de Início:</label>
+                <input type="date" id="inicio">
+                
+                <label for="fim">Data de Fim:</label>
+                <input type="date" id="fim">
+
+                <label for="todos-dias">Incluir todos os dias:</label>
+                <input type="checkbox" id="todos-dias">
+                
+                <button type="button" id="exportar">Exportar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
